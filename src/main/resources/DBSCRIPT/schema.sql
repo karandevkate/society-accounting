@@ -1,0 +1,10 @@
+CREATE TABLE IF NOT EXISTS state (
+    state_id SERIAL PRIMARY KEY,
+    state_name VARCHAR(100) UNIQUE NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS city (
+    city_id SERIAL PRIMARY KEY,
+    city VARCHAR(100) NOT NULL,
+    state_id INTEGER REFERENCES state(state_id)
+);

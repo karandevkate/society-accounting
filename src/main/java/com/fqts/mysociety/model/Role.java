@@ -1,0 +1,5 @@
+package com.fqts.mysociety.model;
+
+public enum Role {
+    MEMBER,SUPERADMIN,ADMIN,CHAIRMAN,SECRETARY,TREASURER,ACCOUNTANT,TENANT,EMPLOYEE;
+}
